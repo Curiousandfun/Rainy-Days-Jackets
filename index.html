@@ -1,15 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My first website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Rainy Days Jackets! The best place to find high quality rain jackets at reasonable prices!" />
+    <title>Rainy Days Jakcets | Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:bold|Cooper&display=swap" rel="stylesheet" />
+    <link href="My website.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/03cfad75e3.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <h2>Welcome to my first website.</h2>
-    <p> It is going to be fun learning how to create a website from scratch</p>
-    <p> The project is about a freshly started company, called "Rainy Jackets". It is dedicated to creating high-quality apparel which gives comfort and warmth and at the same time enables our customers to experience the spirit of outdoor adventure and exploration. </p>
-    <p>We at "Rainy Jackets" believe that the logo of the company "Pushing the comfort zone" well represents our idea to combine in our products durability with maximum comfort and security of customers during the activity of exploration out in the nature.</p>
-    <p>Target audience is men and women aged 30 to 50 whose interests are: being outdoors, hiking, exploring, skiing, camping, canoeing.</p>
-    <p>The jackets are mid-range in price and emphasize durability and being suitable for a range of different weather types ensuring customers are comfortable whatever adventure they go on.</p>
+    <header>
+      <img src="Images/RainyDays_Logo.png" alt="Logo for Rainy Jackets Website" class="logo">
+      <label class="hamburger label" for="hamburer-menu"><i class= "fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburer-menu">
+      <element id="hamburer-menu": checked></element>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="procucts.html">Products</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <i class="fas fa-search" fa-3x></i>
+        <input type="text" name="search">
+        
+        </section>
+        <section>
+          <i class ="fas fa-arrow-alt-circle-left" fa-3x></i>
+          <input type="submit" value="Log In">
+          <input type="submit" value="Sign Up">
+          <i class="fas fa-shopping-bag" fa-3x></i>
+          <div>
+            <p id ="shopping">Go to your shopping cart</p>
+          </div>
+        </section>
+        <section>
+          <span>ADVENTUROUS</span>
+          <span>BOLD</span>
+          <span>CONFIDENT</span>
+          <span>INSPIRING</span>
+        </section>
+      
+    </header>
+    
+    <main>
+      <h1>Home</h1>
+      <p class = "frame">We provide apparel that inspires you to push your limits and explore your adventurous and bold nature, while keeping you comfortable and warm.</p>
+      <section class="container pic">
+        <div class="upper_left">Upper Left</div>
+        <div class="upper_right">Upper Right</div>
+        <div class="lower_left">Lower Left</div>
+        <div class="lower_right">Lower Right</div>
+      </section>  
+    </main>
+    <footer>
+      <section class="container link">
+        <div><p>About Us</p></div>
+        <div><p>Contact</p></div>
+        <div><p>Terms and Conditions</p></div>
+      </section>
+      <section class="container media">
+        <div><p>Facebook</p>
+          <i class="fab fa-facebook-f" fa-3x></i>
+        </div>
+        <div><p>Twitter</p>
+          <i class="fab fa-twitter" fa-3x></i>  
+        </div>
+        <div><p>Instragram</p>
+          <i class="fab fa-instagram" fa-3x></i> 
+        </div>
+      </section>
+      <section class="containter other">
+        <div>
+          <i class="fas fa-shopping-bag" fa-3x></i>
+          <p>Go to your shopping cart</p>
+        </div>
+        <div><p>Subscribe to our Newsletter</p></div>
+        <div><p>Email Address: </p>
+            <input type="text" name="type">
+            <i class="far fa-check-circle" fa-3x></i>
+             <p>&copy; Copyright</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

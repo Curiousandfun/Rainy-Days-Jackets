@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("RobotoFlex-VF.woff2") format("woff2 supports variations"),
+    url("RobotoFlex-VF.woff2") format("woff2-variations");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+body {
+  font-family: "RobotoFlex", Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  display: grid;
+  grid-template-areas:
+    "myheader myheader"
+    "mynav mynav"
+    "mymain mymain"
+    "myfooter myfooter";
+}
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+}
+.logo {
+  
+  max-width: 100 px;
+  float: left;
+  max-height: 30 px;
+  margin-right: 15 px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  grid-area: mynav;
+  background: none;
+}
+
+nav, #hamburger-menu{
+  display: none;
+  }
+
+.hamburger-label{
+  float:right;
+  color: #FFF;
+  padding:10px;
+  font-size: 1.5em;
+  display:block;
+  }
+#hamburger-menu:checked ~ nav{
+  display:block;
+}
+
+nav li {
+  display: inline-block;
+  color: #ca0063;
+}
+nav ul {
+  padding: 0px;
+}
+nav a {
+  color: #ca0063;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.current {
+  font-weight: bold;
+}
+p {
+  color: #d1942b;
+}
+header {
+  background:#d2932a;
+  min-height: 100px;
+  grid-area: myheader;
+  background: #d2932a;
+}
+
+main {
+  grid-area: mymain;
+  background: lightgreen;
+}
+
+  h1{
+    color:#d2932a
+    Font-type: Georgia;
+    font-size:48;
+    font-style:bold;
+    alignment:center;
+    
+  }
+  p.frame {
+  border-style: ridge;
+  border-size: 1px;
+  border-color: #707070;
+  border-top-width: initial;
+  padding: 10px;
+}
+  .
+
+footer {
+  grid-area: myfooter;
+  background: yellow;
+}
+@media(min-width: 600 px) {
+  .logo{
+    float:left;
+  }
+  nav{
+    display:inline-block;
+  }
+  .hamburger-label{
+    display:none;
+  }
+  ul{
+    display:flex;
+  }
+  li{
+    display:inline-block;
+  }
+  nav a{
+    padding: 20% 40px;
+  }
+}
