@@ -5,63 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Welcome to Rainy Days Jackets! The best place to find high quality rain jackets at reasonable prices!" />
     <title>Rainy Days Jakcets | Home</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Georgia:bold|Cooper&display=swap" rel="stylesheet" />
     <link href="Index.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/03cfad75e3.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <img src="Images/RainyDays_Logo.png" alt="Logo for Rainy Jackets Website" class="logo">
-      <label class="hamburger label" for="hamburer-menu"><i class= "fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburer-menu">
-      <element id="hamburer-menu": checked></element>
-      <section>
+      <div class="headerrow1" >
+        <img src="Images/RainyDays_Logo.png" alt="Logo for Rainy Jackets Website" class="logo">
         <nav>
-          <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="procucts.html">Products</a></li>
-            <li><a href="About Us.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+            <ul>
+              <li><a href="index.html" class="current">Home</a></li>
+              <li><a href="procucts.html">Products</a></li>
+              <li><a href="About Us.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-        <i class="fas fa-search" fa-3x></i>
-        <input type="text" name="search">
-        
-        </section>
-        <section>
+        <Span><i class="fas fa-search" fa-3x></i></Span>
+        <span><input type="text" name="search" class="searchbox"></span>
+      </div>
+     
+      
+       <div>
           <i class ="fas fa-arrow-alt-circle-left" fa-3x></i>
           <input type="submit" value="Log In">
           <input type="submit" value="Sign Up">
           <i class="fas fa-shopping-bag" fa-3x></i>
-          <div>
-            <p id ="shopping">Go to your shopping cart</p>
-          </div>
-        </section>
-        <section>
+          <p id ="shopping">Go to your shopping cart</p>
+      </div>
+        
+      <section>
           <span>ADVENTUROUS</span>
           <span>BOLD</span>
           <span>CONFIDENT</span>
           <span>INSPIRING</span>
-        </section>
+      </section>
       
     </header>
     
     <main>
+      
       <h1>Home</h1>
+      
       <p class = "frame">We provide apparel that inspires you to push your limits and explore your adventurous and bold nature, while keeping you comfortable and warm.</p>
       <section class="container pic">
-        <div class="upper_left">Upper Left</div>
-        <div class="upper_right">Upper Right</div>
-        <div class="lower_left">Lower Left</div>
-        <div class="lower_right">Lower Right</div>
-      </section>  
+        <div class="item one">Upper Left Image</div>
+        <div class="item two">Upper Right Image</div>
+        <div class="item three">Lower Left Image</div>
+        <div class="item four">Lower Right Image</div>
+      </section>    
     </main>
     <footer>
       <section class="container link">
-        <div><p>About Us</p></div>
-        <div><p>Contact</p></div>
-        <div><p>Terms and Conditions</p></div>
+        <div class="item one"><p>About Us</p></div>
+        <div class="item two"><p>Contact</p></div>
+        <div class="item three"><p>Terms and Conditions</p></div>
       </section>
       <section class="container media">
         <div><p>Facebook</p>
@@ -81,7 +79,7 @@
         </div>
         <div><p>Subscribe to our Newsletter</p></div>
         <div><p>Email Address: </p>
-            <input type="text" name="type">
+            <input type="text" name="type" class="email" >
             <i class="far fa-check-circle" fa-3x></i>
              <p>&copy; Copyright</p>
         </div>
