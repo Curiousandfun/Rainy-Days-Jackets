@@ -1,0 +1,167 @@
+/*----------------------------------------
+colour palette
+#d2932a - header background brown
+#ca0063 - header purple
+#FFFFFF - white
+#707070 - border gray
+#F9D776 - yellow
+#113D4A - dark gray almost black
+#00A9DA - blue
+#52DEA7 - green
+----------------------------------------
+*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 20px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  background: #d2932a;
+  min-height: 100px;
+  padding: 20px;
+}
+
+.logo {
+  margin: 10 px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  max-height: 75px;
+}
+
+nav li {
+  display: inline-block;
+  color: #ca0063;
+}
+nav ul {
+  padding: 0px;
+}
+nav a {
+  color: #ca0063;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+  background-color: green;
+  font-family: "Montserrat", sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, minmax(0, auto));
+  gap:10 px;
+}
+
+.grid-item-1{
+  text-align: center;
+  color: #d2932a;
+  grid-row: 1 / 2;
+}
+
+.grid-item-2{
+  color:#d2932a;
+  grid-row: 2 / 3; 
+}
+
+.element{
+  display:inline;
+  color:  #d2932a;
+  max-width: 100%;
+  padding: 10px;
+
+}
+
+.grid-item-3{
+  grid-row: 3 / 4;
+}
+
+.pic-holder{
+  background-image: url("Images/man_blue_jacket_upper_right.jpg)";
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 250px;
+
+.price{
+  color:#d2932a;
+  text-transform:uppercase;
+}
+
+#quantity {
+  padding: 5px;
+  width: 35px;
+  border: 1px solid #555;
+}
+
+.grid-item-4{
+  grid-column: 7 / 8;
+  grid-row: 4 / 5;
+}
+
+.grid-item-5{
+  grid-row: 5 / 6;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4caf50;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.grid-item-5 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #52dea7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+footer {
+  background-color: blue;
+}

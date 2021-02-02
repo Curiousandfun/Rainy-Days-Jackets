@@ -1,0 +1,74 @@
+/*----------------------------------------
+colour palette
+#d2932a - header background brown
+#ca0063 - header purple
+#FFFFFF - white
+#707070 - border gray
+#F9D776 - yellow
+#113D4A - dark gray almost black
+#00A9DA - blue
+----------------------------------------
+*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    margin:0;
+    padding: 0;
+    font-family:;
+    font-weight: 400;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: auto auto;
+  }
+
+  header {
+    background:#d2932a;
+    }
+
+   
+  .logo {
+    
+    
+    margin: 10 px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    max-height:75px;
+  }
+
+    nav li {
+    display: inline-block;
+    color: #ca0063;
+  }
+  nav ul {
+    padding: 10px;
+  }
+  nav a {
+    color: #ca0063;
+    text-decoration: none;
+    padding: 10px;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+      
+main {
+    
+    background: green; 
+        
+      }
+h1{
+    color:#d2932a
+    font-family: ;
+    font-size: 48px;
+    font-weight:bold;
+    text-align:center;
+
+footer{
+    background:blue;
+}
+

@@ -1,0 +1,115 @@
+/*----------------------------------------
+colour palette
+#d2932a - header background brown
+#ca0063 - header purple
+#FFFFFF - white
+#707070 - border gray
+#F9D776 - yellow
+#113D4A - dark gray almost black
+#00A9DA - blue
+----------------------------------------
+*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-weight: 400;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+header {
+  background: #d2932a;
+  min-height: 100px;
+  padding: 20px;
+  grid-column: 1 / 5;
+  grid-rows:1 / 4;
+}
+
+.logo {
+  margin: 10 px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  max-height: 75px;
+}
+
+.first-line-header {
+  display: inline-block;
+  padding: 0;
+  clear: both;
+  min-width: 950px;
+}
+
+nav {
+  grid-area: mynav;
+  background: none;
+}
+nav li {
+  display: inline-block;
+  color: #ca0063;
+}
+nav ul {
+  padding: 0px;
+}
+nav a {
+  color: #ca0063;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.current {
+  font-weight: bold;
+}
+
+nav + i {
+  display: inline-block;
+  overflow: auto;
+}
+
+main {
+  background-color: green;
+  display:inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1 / 5;
+  gap: 10px;
+}
+.container {
+  max-width: 1000px;
+     }
+.container-grid-item-1{
+  grid-column: 1 / 3;
+}
+.container-grid-item-2{
+  grid-column: 3 / 5;
+}
+.products{
+  display: inline;
+}
+}
+main h1 {
+  color: #f9d776;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main + a{
+ float: left;
+}
+footer {
+  background-color: yellow;
+  grid-column: 1 / 5;
+}
