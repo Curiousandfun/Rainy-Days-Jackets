@@ -9,87 +9,97 @@
     <link href="Styles/Index.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/03cfad75e3.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <header>
-      
-        <div class = "absolute-position">
-          <img src="Images/RainyDays_Logo.png" alt="Logo for Rainy Days Jackets Website" class="logo">
-          <nav>
-            <ul>
-              <li><a href="index.html" class="current">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="About-Us.html">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-          <div class="relative position">
-          <Span><i class="fas fa-search" fa-3x></i></Span>
-          <span><input type="text" name="search" class="searchbox"></span>
-        </div>
-        
-      
-      
-     
-      
-       <div class="relative-position">
-          <i class ="fas fa-arrow-alt-circle-left" fa-3x></i>
-          <input type="submit" value="Log In">
-          <input type="submit" value="Sign Up">
-          <i class="fas fa-shopping-bag" fa-3x></i>
-          <p id ="shopping">Go to your shopping cart</p>
-      </div>
-        
-      <section>
-          <span>ADVENTUROUS</span>
-          <span>BOLD</span>
-          <span>CONFIDENT</span>
-          <span>INSPIRING</span>
-      </section>
-      
-    </header>
+    <body>
+      <header class="container">                          
+        <img src="Images/RainyDays_Logo.png" alt="Logo for Rainy Days Jackets Website" class="logo">
+        <a href="index.html" >Home</a>
+        <a href="Products.html">Products</a>
+        <a href="About-us.html" class="current">About Us</a>
+        <a href="Contact.html">Contact</a>
+        <input type="text" placeholder="Search.."><i class="fas fa-search" fa-3x style="font-size:40px;color:black"></i>  
+      </header>
+      <header class="container">        
     
+                <i class ="fas fa-arrow-alt-circle-left" fa-3x style="font-size:40px;color: white;"></i>
+                <input type="submit" value="Log In" style="font-size:20px;color:#ca0063;border-radius: 25%;border-color: #707070;">
+                <input type="submit" value="Sign Up" style="font-size:20px; color:#ca0063;border-radius: 25%;border-color: #707070;">
+                <i class="fas fa-shopping-bag" fa-3x style="font-size:40px;color:white"></i>
+                <span id="shopping-cart">
+                    Go to your shopping cart  
+                </span>         
+      </header>
+    
+      <header class="container">    
+        
+            <span style="font-size:40px;color:#113D4A">ADVENTUROUS</span>
+            <span style="font-size:40px;color:#113D4A">BOLD</span>
+            <span style="font-size:40px;color:#113D4A">CONFIDENT</span>
+            <span style="font-size:40px;color:#113D4A">INSPIRING</span>      
+      </header>    
     <main>
+      <div class="content-wrap">
+        <h1>Home</h1>
       
-      <h1>Home</h1>
-      
-      <p class = "frame">We provide apparel that inspires you to push your limits and explore your adventurous and bold nature, while keeping you comfortable and warm.</p>
-      <section class="container pic">
-        <div class="item one">Upper Left Image</div>
-        <div class="item two">Upper Right Image</div>
-        <div class="item three">Lower Left Image</div>
-        <div class="item four">Lower Right Image</div>
-      </section>    
+        <p>
+          We provide apparel that inspires you to push your limits and explore your adventurous and bold nature, while keeping you comfortable and warm.
+        </p>
+      <section class="container-pic">
+        <section class="container-pic-1">
+          <div class="item one"></div>
+          <div class="item two"></div>
+        </section>
+        <section class="container-pic-2"> 
+          <div class="item three"></div>
+          <div class="item four"></div>
+        </section> 
+      </section>   
+      </div>
     </main>
     <footer>
-      <section class="container link">
-        <div class="item one"><p>About Us</p></div>
-        <div class="item two"><p>Contact</p></div>
-        <div class="item three"><p>Terms and Conditions</p></div>
-      </section>
-      <section class="container media">
-        <div><p>Facebook</p>
-          <i class="fab fa-facebook-f" fa-3x></i>
-        </div>
-        <div><p>Twitter</p>
-          <i class="fab fa-twitter" fa-3x></i>  
-        </div>
-        <div><p>Instragram</p>
-          <i class="fab fa-instagram" fa-3x></i> 
-        </div>
-      </section>
-      <section class="containter other">
-        <div>
-          <i class="fas fa-shopping-bag" fa-3x></i>
-          <p>Go to your shopping cart</p>
-        </div>
-        <div><p>Subscribe to our Newsletter</p></div>
-        <div><p>Email Address: </p>
-            <input type="text" name="type" class="email" >
-            <i class="far fa-check-circle" fa-3x></i>
-             <p>&copy; Copyright</p>
-        </div>
-      </section>
+      <div class="footer-container">
+        <footer class="container-3">
+                              
+                <div>
+                      <a href="About-us.html">About Us</a>
+                </div>
+                <div>
+                    <a href="Contact.html">Contact</a>
+                </div>
+                <div>    
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            
+        </footer>    
+        <footer class="container-3">
+                
+                
+                    <p><i class="fab fa-facebook-f" fa-3x style="font-size:20px;color:white"></i> Facebook</p> 
+                    
+                        <p><i class="fab fa-twitter" fa-3x style="font-size:20px;color:white"></i> Twitter</p> 
+                    
+                    
+                        <p><i class="fab fa-instagram" fa-3x style="font-size:20px;color:white"></i> Instagram</p>
+                
+        </footer>
+                
+        <footer class="container-3">
+                
+                    <span >
+                    <i class="fas fa-shopping-bag" fa-3x style="font-size:20px;color:white"></i>Go to your shopping cart
+                    </span>
+                    <p>
+                        Subscribe to our Newsletter
+                    </p>
+                    <p>
+                        Email Address:
+
+                    </p>
+                        <span><input type="text" name="type" class="email" style="font-size:20px;color:white" >
+                        <i class="far fa-check-circle" fa-3x style="font-size:20px;color:white"></i>
+                        </span>
+                    <p>&copy; Copyright</p>
+        </footer>
+      </div>
     </footer>
   </body>
 </html>

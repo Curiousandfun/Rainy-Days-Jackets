@@ -12,96 +12,109 @@
 </head>
 <body>
     <header>
-        <div class="wrap">
-        <img src="Images/RainyDays_Logo.png" alt="Logo for Rainy Days Jackets Website" class="logo">
-        <div class="line 1">
-        <nav>
-            <ul>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="About Us.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <i class="fas fa-search" fa-3x></i><input type="text" name="search" class="searchbox">
-        </div>
-        <div class="line 2">
-            <i class ="fas fa-arrow-alt-circle-left" fa-3x></i>
-            <input type="submit" value="Log In">
-            <input type="submit" value="Sign Up">
-            <i class="fas fa-shopping-bag" fa-3x></i>
-            Go to your shopping cart
-        </div>
-        <section class="line 3">
-            <span>ADVENTUROUS</span>
-            <span>BOLD</span>
-            <span>CONFIDENT</span>
-            <span>INSPIRING</span>
-        </section>
-        </div>
-    </header>
+        <header class="container">                          
+            <img src="Images/RainyDays_Logo.png" alt="Logo for Rainy Days Jackets Website" class="logo">
+            <a href="index.html" >Home</a>
+            <a href="Products.html">Products</a>
+            <a href="About-us.html" >About Us</a>
+            <a href="Contact.html">Contact</a>
+            <input type="text" placeholder="Search.."><i class="fas fa-search" fa-3x style="font-size:40px;color:black"></i>  
+        </header>
+        <header class="container">        
+        
+                    <i class ="fas fa-arrow-alt-circle-left" fa-3x style="font-size:40px;color: white;"></i>
+                    <input type="submit" value="Log In" style="font-size:20px;color:#ca0063;border-radius: 25%;border-color: #707070;">
+                    <input type="submit" value="Sign Up" style="font-size:20px; color:#ca0063;border-radius: 25%;border-color: #707070;">
+                    <i class="fas fa-shopping-bag" fa-3x style="font-size:40px;color:white"></i>
+                    <span id="shopping-cart">
+                        Go to your shopping cart  
+                    </span>         
+        </header>
+        
+        <header class="container">    
+            
+                <span style="font-size:40px;color:#113D4A">ADVENTUROUS</span>
+                <span style="font-size:40px;color:#113D4A">BOLD</span>
+                <span style="font-size:40px;color:#113D4A">CONFIDENT</span>
+                <span style="font-size:40px;color:#113D4A">INSPIRING</span>      
+        </header> 
     <main>
         <div class= "wrapper">
-                <h1>
-            JACKET DESCRIPTION
-                <h1>
-                <div class="container pic">
-                    Picture of Man's red jacket
-                    <p>
-                        PRICE: USD 250
-                    </p>
+            <h1>
+        JACKET DESCRIPTION
+            <h1>
+            <div class="container-pic">
+                <div class="picture">
+                    
                 </div>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae dolor a perferendis exercitationem atque sint accusamus, debitis consequuntur 
-                        itaque officia voluptatibus, magnam totam quibusdam sit esse necessitatibus temporibus consectetur.
-                    </p>
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae dolor a perferendis exercitationem atque sint accusamus, debitis consequuntur 
+                    itaque officia voluptatibus, magnam totam quibusdam sit esse necessitatibus temporibus consectetur.
                 </div>
-        </div>
-        <section class="item info">
-
-            <p>
-                Available sizes:
-            </p>
-            <div>
-                <button class="size">S</button>
-                <button class="size">M</button>
-                <button class="size">L</button>
-                <button class="size">XL</button>
-                <button class="cart">ADD TO CART</button>
-
             </div>
-        </section>    
+            <p>
+                PRICE: USD 250
+            </p>
+            <p>
+                AVAILABLE SIZES:
+            </p>
+            <section class="container-btn">
+                <button style="border-radius: 15%;background: #52DEA7;color: black;border: 5px solid #DD7C68;width:70px;height:70px;">S</button>
+                <button style="border-radius: 15%;background: #52DEA7;color: black;border: 5px solid #DD7C68;width:70px;height:70px;">M</button>
+                <button style="border-radius: 15%;background: #52DEA7;color: black;border: 5px solid #DD7C68;width:70px;height:70px;">L</button>
+                <button style="border-radius: 15%;background: #52DEA7;color: black;border: 5px solid #DD7C68;width:70px;height:70px;">XL</button>
+            </section>                       
+            <div> 
+                <a href="Shopping-cart-man-red-jacket.html" class="button">ADD TO CART</a>  
+             </div>    
+    </div>
+        
     </main>
     <footer>
-        <section class="container link">
-            <div class="item one">About Us</div>
-            <div class="item two">Contact</div>
-            <div class="item three">Terms and Conditions</div>
-        </section>
-        <section class="container media">
-            <div>
-                <i class="fab fa-facebook-f" fa-3x></i> Facebook
-            </div>
-                <i class="fab fa-twitter" fa-3x></i> Twitter 
-            </div>
-            <div>
-                <i class="fab fa-instagram" fa-3x></i> Instagram
-            </div>
-        </section>
-        <section class="containter other">
-            <div>
-              <i class="fas fa-shopping-bag" fa-3x></i>Go to your shopping cart
-            </div>
-            <div>
-                Subscribe to our Newsletter
-            </div>
-            <div>Email Address:
-                <input type="text" name="type" class="email" >
-                <i class="far fa-check-circle" fa-3x></i>
-            </div>
-            <p>&copy; Copyright</p>
-          </section>
+        <div class="footer-container">
+            <footer class="container-3">
+                                  
+                    <div>
+                          <a href="About-us.html">About Us</a>
+                    </div>
+                    <div>
+                        <a href="Contact.html">Contact</a>
+                    </div>
+                    <div>    
+                        <a href="#">Terms and Conditions</a>
+                    </div>
+                
+            </footer>    
+            <footer class="container-3">
+                    
+                    
+                        <p><i class="fab fa-facebook-f" fa-3x style="font-size:20px;color:white"></i> Facebook</p> 
+                        
+                            <p><i class="fab fa-twitter" fa-3x style="font-size:20px;color:white"></i> Twitter</p> 
+                        
+                        
+                            <p><i class="fab fa-instagram" fa-3x style="font-size:20px;color:white"></i> Instagram</p>
+                    
+            </footer>
+                    
+            <footer class="container-3">
+                    
+                        <span >
+                        <i class="fas fa-shopping-bag" fa-3x style="font-size:20px;color:white"></i>Go to your shopping cart
+                        </span>
+                        <p>
+                            Subscribe to our Newsletter
+                        </p>
+                        <p>
+                            Email Address:
+    
+                        </p>
+                            <span><input type="text" name="type" class="email" style="font-size:20px;color:white" >
+                            <i class="far fa-check-circle" fa-3x style="font-size:20px;color:white"></i>
+                            </span>
+                        <p>&copy; Copyright</p>
+            </footer>
+        </div>
     </footer>
     
 </body>

@@ -7,68 +7,149 @@ colour palette
 #F9D776 - yellow
 #113D4A - dark gray almost black
 #00A9DA - blue
+#52DEA7 - green
 ----------------------------------------
 */
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  body {
-    margin:0;
-    padding: 0;
-    font-family:;
-    font-weight: 400;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: auto auto;
-  }
-
-  header {
-    background:#d2932a;
-    }
-
-   
-  .logo {
-    
-    
-    margin: 10 px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    float: left;
-    max-height:75px;
-  }
-
-    nav li {
-    display: inline-block;
-    color: #ca0063;
-  }
-  nav ul {
-    padding: 10px;
-  }
-  nav a {
-    color: #ca0063;
-    text-decoration: none;
-    padding: 10px;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-      
-main {
-    
-    background: green; 
-        
-      }
-h1{
-    color:#d2932a
-    font-family: ;
-    font-size: 48px;
-    font-weight:bold;
-    text-align:center;
-
-footer{
-    background:blue;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  max-width: 1450px;
+  max-height: 1400px;
 }
 
+header {
+  background: #d2932a;
+  height: 100px;
+  padding: 20px;
+}
+
+.logo {
+  margin: 25 px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: auto;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container a {
+  color: #ca0063;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 8px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+}
+.container a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.current {
+  font-weight: bold;
+}
+
+.container input[type="text"] {
+  width: 120px;
+  height: 40px;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 0px;
+  font-size: 20px;
+}
+.container span {
+  font-size: 30px;
+}
+#shopping-cart{
+  color:white;
+  font-size 30px;
+}
+main {
+    
+    background: black; 
+    font: size 32px;
+    font-weight: 800;
+    color:white;
+        
+    .main-container{
+      min-height: 1000px;
+      
+
+    }
+        
+      }
+      main h1 {
+        font-size:48px;
+        font-weight: 800;
+        color:white;
+        text-align:center;
+      }
+
+      . 1 {
+       
+        margin-bottom:100px;
+        min-height: 1000px;
+        
+      }
+      .button{
+        font-size: 30px;
+        font-weight: 800;
+        color:white;
+        background-color: #52DEA7;
+        border: none;  
+        position:relative;
+        margin-left: 500px; 
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 10px;
+        
+      }
+
+
+      footer {
+        background-color: #00a9da;
+        height: 200px;
+      }
+      
+      .footer-container {
+        display: inline-flex;
+        justify-content: space-around;
+        align-content: space-around;
+      }
+      
+      .container-3 {
+        dislpay: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-around;
+        margin-left: 80px;
+        margin-right: 350px;
+      }
+      
+      .container-3 span,
+      .container-3 p {
+        font-size: 12px;
+        color: #ffffff;
+      }
+      
+      .container-3 a {
+        font-size: 12px;
+        color: #ffffff;
+        padding: 8px; /* Add some padding */
+        transition: all 0.3s ease; /* Add transition for hover effects */
+      }
+      
+      footer a:hover {
+        background-color: #000; /* Add a hover color */
+      }
+      

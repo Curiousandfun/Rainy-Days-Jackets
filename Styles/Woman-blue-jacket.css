@@ -18,46 +18,145 @@ html {
   box-sizing: inherit;
 }
 body {
-  padding: 20px;
+  padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  max-width: 1450px;
+  max-height: 1400px;
 }
 
 header {
   background: #d2932a;
-  min-height: 100px;
+  height: 100px;
   padding: 20px;
 }
 
 .logo {
-  margin: 10 px;
+  margin: 25 px;
   background-size: cover;
   background-repeat: no-repeat;
-  float: left;
-  max-height: 75px;
+  max-height: auto;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
 }
 
-nav li {
-  display: inline-block;
-  color: #ca0063;
-}
-nav ul {
-  padding: 0px;
-}
-nav a {
+.container a {
   color: #ca0063;
   text-decoration: none;
-  padding: 10px;
+  font-size: 30px;
+  padding: 8px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
 }
-nav a:hover {
-  text-decoration: underline;
+.container a:hover {
+  background-color: #000; /* Add a hover color */
 }
+
+.current {
+  font-weight: bold;
+}
+
+.container input[type="text"] {
+  width: 120px;
+  height: 40px;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 0px;
+  font-size: 20px;
+}
+.container span {
+  font-size: 30px;
+}
+#shopping-cart{
+  color:white;
+  font-size 30px;
+}
+
 main {
   background-color: green;
   font-family: "Montserrat", sans-serif;
 }
 
-footer {
-  background-color: blue;
+.wrapper{
+
+  min-height: 1000px;
+  min-width: 900px;
+ }
+ 
+ .container-pic{
+  dislpay:flex;
+  width: 800px;
+  height:900px;
+  }
+
+  .picture{
+    background-image: url("../Images/woman_blue_jacket_upper_right.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 600px;
+    min-height: 600px;    
+  }
+  description{
+    color: #D2932A
+    font-size:32px;
+    font-weight:800;
+    min-width: 600px;
+    
+  }
+  
+  .container-btn{
+    display:flex;
+    min-height: 300px;
+    margin-bottom: 180px;
+  }
+
+  .button{
+    font-size: 30px;
+    font-weight: 800;
+    color:#d2932a;
+    background-color: #52DEA7;
+    border: none;  
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 250px;
+  }
+  footer {
+  background-color: #00a9da;
+  height: 200px;
+}
+
+.footer-container {
+  display: inline-flex;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.container-3 {
+  dislpay: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  margin-left: 80px;
+  margin-right: 200px;
+}
+
+.container-3 span,
+.container-3 p {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.container-3 a {
+  font-size: 12px;
+  color: #ffffff;
+  padding: 8px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+}
+
+footer a:hover {
+  background-color: #000; /* Add a hover color */
 }

@@ -7,7 +7,6 @@ colour palette
 #F9D776 - yellow
 #113D4A - dark gray almost black
 #00A9DA - blue
-#52DEA7 - green
 ----------------------------------------
 */
 html {
@@ -19,149 +18,176 @@ html {
   box-sizing: inherit;
 }
 body {
-  padding: 20px;
+  padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  max-width: 1450px;
+  max-height: 1400px;
 }
 
 header {
   background: #d2932a;
-  min-height: 100px;
+  height: 100px;
   padding: 20px;
 }
 
 .logo {
-  margin: 10 px;
+  margin: 25 px;
   background-size: cover;
   background-repeat: no-repeat;
-  float: left;
-  max-height: 75px;
+  max-height: auto;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
 }
 
-nav li {
-  display: inline-block;
-  color: #ca0063;
-}
-nav ul {
-  padding: 0px;
-}
-nav a {
+.container a {
   color: #ca0063;
   text-decoration: none;
-  padding: 10px;
+  font-size: 30px;
+  padding: 8px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
 }
-nav a:hover {
-  text-decoration: underline;
+.container a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.current {
+  font-weight: bold;
+}
+
+.container input[type="text"] {
+  width: 120px;
+  height: 40px;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 0px;
+  font-size: 20px;
+}
+.container span {
+  font-size: 30px;
+}
+#shopping-cart{
+  color:white;
+  font-size 30px;
 }
 main {
-  background-color: green;
+  
   font-family: "Montserrat", sans-serif;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, minmax(0, auto));
-  gap:10 px;
-}
 
-.grid-item-1{
+main h1{
   text-align: center;
-  color: #d2932a;
-  grid-row: 1 / 2;
-}
+  color:#D2932A
+  font-size:40px;
+  font-weight:800;
+  }
 
-.grid-item-2{
-  color:#d2932a;
-  grid-row: 2 / 3; 
-}
+  .row1{
+    display:flex;
+    justify-content: space-around;
+    color: #D2932A
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:50px;
+  }
 
-.element{
-  display:inline;
-  color:  #d2932a;
-  max-width: 100%;
-  padding: 10px;
+  .row2{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    color: #D2932A
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:50px;
 
-}
+  }
 
-.grid-item-3{
-  grid-row: 3 / 4;
-}
+  .pic-container{
+    background-image: url("../Images/man_blue_jacket_upper_right.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 600px;
+    min-height: 600px;    
+  }
 
-.pic-holder{
-  background-image: url("Images/man_blue_jacket_upper_right.jpg)";
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 250px;
+  .row2 input[type="number"] {
+max-height: 40px;
+max-width: 50px;
 
-.price{
-  color:#d2932a;
-  text-transform:uppercase;
-}
 
-#quantity {
-  padding: 5px;
-  width: 35px;
-  border: 1px solid #555;
-}
+  }
+  .description{
+    color: #D2932A
+    font-size:20px;
+    font-weight:400;
+    height: 200px; 
+    
+   }
 
-.grid-item-4{
-  grid-column: 7 / 8;
-  grid-row: 4 / 5;
-}
+   .buttons{
+     display:flex;
+     justify-content: space-around;
+    color: #D2932A
+    font-size:32px;
+    font-weight:800;
+     }
 
-.grid-item-5{
-  grid-row: 5 / 6;
-}
+     .dropbtn{
+      width: 100px;
+      height: 40px;
+    }
 
-/* Dropdown Button */
-.dropbtn {
-  background-color: #4caf50;
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
+    .button{
+     font-size: 30px;
+     font-weight: 800;
+     color:#d2932a;
+     background-color: #52DEA7;
+     border: none;  
+     text-align: left;
+     text-decoration: none;
+     cursor: pointer;
+     border-radius: 10px;
+     margin-bottom: 250px;
+   }
+   
 
-/* The container <div> - needed to position the dropdown content */
-.grid-item-5 {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #52dea7;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
 
 footer {
-  background-color: blue;
+  background-color: #00a9da;
+  height: 200px;
+}
+
+.footer-container {
+  display: inline-flex;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.container-3 {
+  dislpay: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  margin-left: 80px;
+  margin-right: 200px;
+}
+
+.container-3 span,
+.container-3 p {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.container-3 a {
+  font-size: 12px;
+  color: #ffffff;
+  padding: 8px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+}
+
+footer a:hover {
+  background-color: #000; /* Add a hover color */
 }
